@@ -1,8 +1,16 @@
 angular.module('ngSnackbar', [])
 .directive('snackbar', [function () {
+    var snackbarTemplate =
+        `<div class="snackbar" ng-show="showSnackbar">` +
+            `<div class="message" ng-repeat="message in messages track by $index">` +
+                `{{message}}` +
+                `<button class="dismiss-button" ng-click="dismiss($index)"><div class="glyphicon glyphicon-remove-circle"></div></button>` +
+            `</div>` +
+        `</div>`
+
     return {
         restrict: 'AE',
-        templateUrl: 'views/directives/snackbar.html',
+        template: snackbarTemplate,
         controllerAs: 'ctrl',
         controller: snackbarController,
         scope: {

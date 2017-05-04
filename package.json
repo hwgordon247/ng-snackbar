@@ -1,0 +1,23 @@
+{
+  "name": "ng-snackbar",
+  "version": "1.0.0",
+  "description": "A message snackbar for Angular",
+  "main": "src/ng-snackbar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwgordon247/ng-snackbar.git"
+  },
+  "keywords": [
+    "snackbar",
+    "angular"
+  ],
+  "author": "Henry Gordon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hwgordon247/ng-snackbar/issues"
+  },
+  "homepage": "https://github.com/hwgordon247/ng-snackbar#readme"
+}
