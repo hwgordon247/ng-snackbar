@@ -1,1 +1,1 @@
-# ngSnackbar
+# ng-snackbar
