@@ -1,0 +1,28 @@
+.snackbar {
+    background-color: #F1244F;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    padding: 10px 20px 5px 20px;
+    position: fixed;
+    top: 45px;
+    z-index: 20;
+    border-radius: 4px;
+    width: 66.5%;
+}
+
+.message {
+    margin-bottom: 5px;
+}
+
+.dismiss-button {
+    float: right;
+    background-color: transparent;
+    border: none;
+}
+
+/*This adds a delete icon instead of text for the dismiss button from the bootstrap library*/
+/*.dismiss-button::after {
+    content: "\e088";
+    font-family: "Glyphicons Halflings";
+}*/

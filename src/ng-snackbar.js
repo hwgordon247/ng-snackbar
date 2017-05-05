@@ -4,7 +4,7 @@ angular.module('ngSnackbar', [])
         `<div class="snackbar" ng-show="showSnackbar">` +
             `<div class="message" ng-repeat="message in messages track by $index">` +
                 `{{message}}` +
-                `<button class="dismiss-button" ng-click="dismiss($index)"><div class="glyphicon glyphicon-remove-circle"></div></button>` +
+                `<button class="dismiss-button" ng-click="dismiss($index)">{{buttonText}}</button>` +
             `</div>` +
         `</div>`
 
@@ -14,7 +14,9 @@ angular.module('ngSnackbar', [])
         controllerAs: 'ctrl',
         controller: snackbarController,
         scope: {
-            displayMessage: '='
+            displayMessage: '=',
+            buttonText: '=',
+            duration: '='
         }
     };
 
@@ -22,12 +24,14 @@ angular.module('ngSnackbar', [])
         $scope.showSnackbar = false;
         $scope.messages = [];
 
+        var duration = $scope.duration || 10000;
+
         $scope.displayMessage = function (message) {
             $scope.messages.push(message);
             $scope.toggleShowSnackbar();
             setTimeout(function () {
                 $scope.toggleHideSnackbar();
-            }, 10000);
+            }, duration);
         };
 
         $scope.toggleShowSnackbar = function () {
