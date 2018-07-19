@@ -1,0 +1,14 @@
+{
+  "name": "ng-snackbar",
+  "description": "A message snackbar for Angular",
+  "main": "src/ng-snackbar.js",
+  "authors": [
+    "Henry Gordon"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "snackbar",
+    "angular"
+  ],
+  "homepage": "https://github.com/hwgordon247/ng-snackbar"
+}
